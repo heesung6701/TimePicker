@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="time_picker">
+        <attr name="clockSize" format="integer"/>
+        <attr name="clockPadding" format="float"/>
+        <attr name="timePadding" format="float"/>
+        <attr name="timeTextColor" format="color"/>
+        <attr name="timeSelectedTextColor" format="color"/>
+        <attr name="timeBackgroundColor" format="color"/>
+        <attr name="timeTextSize" format="dimension"/>
+        <attr name="clockBorderColor" format="color"/>
+        <attr name="clockColor" format="color"/>
+    </declare-styleable>
+</resources>
