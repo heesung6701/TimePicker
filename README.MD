@@ -1,5 +1,4 @@
-[![Release](https://jitpack.io/v/heesung6701/TimePicker.svg)]
-(https://jitpack.io/v/heesung6701/TimePicker.svg)
+[![](https://jitpack.io/v/heesung6701/TimePicker.svg)](https://jitpack.io/#heesung6701/TimePicker)
 
 # TimePicker
 
@@ -67,7 +66,7 @@ time_picker.timeItemArray[0].selected = true
 class MainActivity : AppCompatActivity(), Observer<Array<TimeItem>>
 ...
 override fun update(item: Array<TimeItem>) {
-   // TODO
+   // do something
 }
 ```
 
@@ -110,6 +109,7 @@ app:clockSize="24"
 ![FullImage](https://user-images.githubusercontent.com/9072200/75664738-4f274b80-5cb6-11ea-925d-1128e94891f0.png)
 
 > clockSize: 12
+
 ![스크린샷 2020-03-02 오후 6 45 36](https://user-images.githubusercontent.com/9072200/75664723-49316a80-5cb6-11ea-910d-398ea7688a91.png)
 
 #### clockPadding
@@ -127,9 +127,11 @@ app:clockPadding="50"
 |Default| 50.0f|
 
 > clockPadding: 50.0f
+
 ![Screenshot_1583143806](https://user-images.githubusercontent.com/9072200/75666619-77fd1000-5cb9-11ea-8426-f4c70c0e7467.png)
 
 > clockPadding: 0.0f
+
 ![Screenshot_1583143543](https://user-images.githubusercontent.com/9072200/75666336-f6a57d80-5cb8-11ea-954c-acf627c307fa.png)
 
 
@@ -153,10 +155,12 @@ app:timeTextColor="#F6BB43"
 ![Screenshot_1583144107](https://user-images.githubusercontent.com/9072200/75667099-5ea89380-5cba-11ea-9897-e75f5fcfdeff.png)
 
 > timeTextColor="#F6BB43"
+
 ![Screenshot_1583144084](https://user-images.githubusercontent.com/9072200/75666958-1ab58e80-5cba-11ea-8e3d-a69aa5eff113.png)
 
 
 > timeTextColor="#FFF700"
+
 ![Screenshot_1583144186](https://user-images.githubusercontent.com/9072200/75667072-54869500-5cba-11ea-86b7-ffbac034f299.png)
 
 
@@ -178,9 +182,11 @@ app:timeSelectedTextColor="#F6BB43"
 ![Screenshot_1583144465](https://user-images.githubusercontent.com/9072200/75667412-f7d7aa00-5cba-11ea-8fa3-00455363ee7a.png)
 
 > timeSelectedColor="#F6BB43"
+
 ![Screenshot_1583144414](https://user-images.githubusercontent.com/9072200/75667347-dc6c9f00-5cba-11ea-98cc-f1f2fb3db247.png)
 
 > timeSelectedColor="#FF7F00"
+
 ![Screenshot_1583144403](https://user-images.githubusercontent.com/9072200/75667340-da0a4500-5cba-11ea-9f5f-9d1807c3b82f.png)
 
 
@@ -199,9 +205,11 @@ app:timeBackgroundColor="#F6BB43"
 |Default| GRAY |
 
 > timeBackgroundColor = "#F6BB43"
+
 ![Screenshot_1583144601](https://user-images.githubusercontent.com/9072200/75667612-4c7b2500-5cbb-11ea-95bc-8723a6c2e21f.png)
 
 > timeBackgroundColor = "#FF7F00"
+
 ![Screenshot_1583144594](https://user-images.githubusercontent.com/9072200/75667607-4a18cb00-5cbb-11ea-8b00-e54742e0b5ef.png)
 
 
@@ -221,9 +229,11 @@ app:clockBorderColor="#F6BB43"
 |Default| GRAY |
 
 > clockBorderColor="#F6BB43"
+
 ![Screenshot_1583144822](https://user-images.githubusercontent.com/9072200/75668075-12f6e980-5cbc-11ea-83b1-e3be9d491bec.png)
 
 > clockBorderColor="#FF7F00"
+
 ![Screenshot_1583144842](https://user-images.githubusercontent.com/9072200/75668077-14281680-5cbc-11ea-8ed9-0c34ddb9e842.png)
 
 #### clockColor
@@ -241,9 +251,11 @@ app:clockColor="#F6BB43"
 |Default| WHITE |
 
 > clockColor="#FF7F00"
+
 ![Screenshot_1583144967](https://user-images.githubusercontent.com/9072200/75668129-27d37d00-5cbc-11ea-8e05-804f921efa1f.png)
 
 > clockColor="#F6BB43"
+
 ![Screenshot_1583144961](https://user-images.githubusercontent.com/9072200/75668120-23a75f80-5cbc-11ea-8b53-2ad24d3558b1.png)
 
 
