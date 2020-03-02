@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TimePickerView">
+        <attr name="clockSize" format="integer"/>
+        <attr name="clockPadding" format="float"/>
+        <attr name="timeTextColor" format="color"/>
+        <attr name="timeSelectedTextColor" format="color"/>
+        <attr name="timeBackgroundColor" format="color"/>
+        <attr name="clockBorderColor" format="color"/>
+        <attr name="clockColor" format="color"/>
+        <attr name="centerImage" format="reference" />
+        <attr name="centerImageHeight" format="integer" />
+        <attr name="centerImageWidth" format="integer" />
+    </declare-styleable>
+</resources>
