@@ -9,8 +9,8 @@ class OptionBuilder {
     private var clockBorderColor: Int = 0
     private var clockColor: Int = 0
     private var centerImage: Int = 0
-    private var centerImageWidth: Int = 0
-    private var centerImageHeight: Int = 0
+    private var centerImageWidth: Float = 0.0f
+    private var centerImageHeight: Float = 0.0f
 
     fun clockSize(clockSize: Int): OptionBuilder {
         this.clockSize = clockSize
@@ -52,12 +52,12 @@ class OptionBuilder {
         return this
     }
 
-    fun centerImageWidth(width: Int): OptionBuilder {
+    fun centerImageWidth(width: Float): OptionBuilder {
         this.centerImageWidth = width
         return this
     }
 
-    fun centerImageHeight(height: Int): OptionBuilder {
+    fun centerImageHeight(height: Float): OptionBuilder {
         this.centerImageHeight = height
         return this
     }

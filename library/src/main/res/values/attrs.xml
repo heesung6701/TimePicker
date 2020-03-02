@@ -9,7 +9,7 @@
         <attr name="clockBorderColor" format="color"/>
         <attr name="clockColor" format="color"/>
         <attr name="centerImage" format="reference" />
-        <attr name="centerImageHeight" format="integer" />
-        <attr name="centerImageWidth" format="integer" />
+        <attr name="centerImageHeight" format="dimension" />
+        <attr name="centerImageWidth" format="dimension" />
     </declare-styleable>
 </resources>

@@ -7,9 +7,7 @@ data class Option(val clockSize: Int,
                   var timeBackgroundColor: Int,
                   var clockBorderColor: Int,
                   var clockColor: Int,
-                  var centerImage: Int,
-                  var centerImageWidth: Int,
-                  var centerImageHeight: Int
+                  var centerImage: Int, var centerImageWidth: Float, var centerImageHeight: Float
 ) {
     val mClockHours = IntArray(clockSize) { it }
     val timePosX = FloatArray(clockSize)

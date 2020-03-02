@@ -49,8 +49,9 @@ class TimePickerView : View, Observer<Array<TimeItem>> {
             val clockBorderColor = getColor(R.styleable.TimePickerView_clockBorderColor, Color.GRAY)
             val clockColor = getColor(R.styleable.TimePickerView_clockColor, Color.WHITE)
             val centerImage = getResourceId(R.styleable.TimePickerView_centerImage, 0)
-            val centerImageHeight = getInt(R.styleable.TimePickerView_centerImageHeight, 200)
-            val centerImageWidth = getInt(R.styleable.TimePickerView_centerImageWidth, 200)
+            val centerImageHeight =
+                getDimension(R.styleable.TimePickerView_centerImageHeight, 200.0f)
+            val centerImageWidth = getDimension(R.styleable.TimePickerView_centerImageWidth, 200.0f)
             options = OptionBuilder().clockSize(clockSize).clockPadding(clockPadding)
                 .timeTextColor(timeTextColor).timeSelectedTextColor(timeSelectedTextColor)
                 .timeBackgroundColor(timeBackgroundColor).clockBorderColor(clockBorderColor)
@@ -187,10 +188,13 @@ class TimePickerView : View, Observer<Array<TimeItem>> {
     private fun drawCenterImage(canvas: Canvas) {
         if (options.centerImage == 0) return
         val vectorDrawableSearch = VectorDrawableCompat.create(resources, options.centerImage, null)
-        val startX = calc.startPos(mCenterPosX, options.centerImageWidth.toFloat()).toInt()
-        val startY = calc.startPos(mCenterPosY, options.centerImageHeight.toFloat()).toInt()
+        val startX = calc.startPos(mCenterPosX, options.centerImageWidth).toInt()
+        val startY = calc.startPos(mCenterPosY, options.centerImageHeight).toInt()
         vectorDrawableSearch?.setBounds(
-            startX, startY, startX + options.centerImageWidth, startY + options.centerImageHeight
+            startX,
+            startY,
+            startX + options.centerImageWidth.toInt(),
+            startY + options.centerImageHeight.toInt()
         )
         vectorDrawableSearch?.draw(canvas)
     }
