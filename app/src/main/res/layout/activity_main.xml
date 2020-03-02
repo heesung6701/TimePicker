@@ -5,20 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".example.MainActivity">
+    tools:context=".MainActivity">
 
-    <com.github.heesung6701.timepicker.timepicker.TimePickerView
+    <com.github.heesung6701.timepicker.library.TimePickerView
         android:id="@+id/time_picker"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:clockSize="24"
-        app:clockPadding="50"
-        app:timePadding="60"
-        app:timeTextColor="#000000"
-        app:timeSelectedTextColor="#ffffff"
-        app:timeBackgroundColor="#000000"
-        app:timeTextSize="16px"
-        app:clockBorderColor="#000000"
         />
 
     <LinearLayout
@@ -32,13 +24,15 @@
             android:id="@+id/edt"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
+            android:hint="이벤트를 줄 숫자"
+            android:inputType="numberDecimal"
             />
 
         <Button
             android:id="@+id/btn"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:text="클릭"
+            android:text="Click"
             />
     </LinearLayout>
 
