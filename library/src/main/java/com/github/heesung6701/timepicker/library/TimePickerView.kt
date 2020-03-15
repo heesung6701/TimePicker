@@ -47,6 +47,7 @@ class TimePickerView : View, Observer<Array<TimeItem>> {
             val timeBackgroundColor =
                 getColor(R.styleable.TimePickerView_timeBackgroundColor, Color.GRAY)
             val clockBorderColor = getColor(R.styleable.TimePickerView_clockBorderColor, Color.GRAY)
+            val clockBorderWidth = getFloat(R.styleable.TimePickerView_clockBorderWidth, 4.0f)
             val clockColor = getColor(R.styleable.TimePickerView_clockColor, Color.WHITE)
             val centerImage = getResourceId(R.styleable.TimePickerView_centerImage, 0)
             val centerImageHeight =
@@ -54,9 +55,10 @@ class TimePickerView : View, Observer<Array<TimeItem>> {
             val centerImageWidth = getDimension(R.styleable.TimePickerView_centerImageWidth, 200.0f)
             options = OptionBuilder().clockSize(clockSize).clockPadding(clockPadding)
                 .timeTextColor(timeTextColor).timeSelectedTextColor(timeSelectedTextColor)
-                .timeBackgroundColor(timeBackgroundColor).clockBorderColor(clockBorderColor)
+                .timeBackgroundColor(timeBackgroundColor).clockBorderColor(clockBorderColor).clockBorderWidth(clockBorderWidth)
                 .clockColor(clockColor).centerImage(centerImage)
                 .centerImageHeight(centerImageHeight).centerImageWidth(centerImageWidth).build()
+
         }
         timeItemArray = TimeItemArrayPublisher(
             options.clockSize
@@ -211,7 +213,7 @@ class TimePickerView : View, Observer<Array<TimeItem>> {
             reset()
             color = options.clockBorderColor
             style = Paint.Style.STROKE
-            strokeWidth = 4.0f
+            strokeWidth = options.clockBorderWidth
             isAntiAlias = true
         }
         canvas.drawCircle(mCenterPosX, mCenterPosY, mRadius, mPaint)

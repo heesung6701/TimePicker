@@ -6,6 +6,7 @@ data class Option(val clockSize: Int,
                   var timeSelectedTextColor: Int,
                   var timeBackgroundColor: Int,
                   var clockBorderColor: Int,
+                  var clockBorderWidth: Float,
                   var clockColor: Int,
                   var centerImage: Int, var centerImageWidth: Float, var centerImageHeight: Float
 ) {

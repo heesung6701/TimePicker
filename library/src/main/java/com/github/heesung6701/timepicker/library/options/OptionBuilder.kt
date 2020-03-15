@@ -7,6 +7,7 @@ class OptionBuilder {
     private var timeSelectedTextColor: Int = 0
     private var timeBackgroundColor: Int = 0
     private var clockBorderColor: Int = 0
+    private var clockBorderWidth: Float = 0.0f
     private var clockColor: Int = 0
     private var centerImage: Int = 0
     private var centerImageWidth: Float = 0.0f
@@ -42,6 +43,11 @@ class OptionBuilder {
         return this
     }
 
+    fun clockBorderWidth(width: Float): OptionBuilder {
+        this.clockBorderWidth = width
+        return this
+    }
+
     fun clockColor(color: Int): OptionBuilder {
         this.clockColor = color
         return this
@@ -70,6 +76,7 @@ class OptionBuilder {
             timeSelectedTextColor = timeSelectedTextColor,
             timeBackgroundColor = timeBackgroundColor,
             clockBorderColor = clockBorderColor,
+            clockBorderWidth = clockBorderWidth,
             clockColor = clockColor,
             centerImage = centerImage,
             centerImageHeight = centerImageHeight,
