@@ -87,24 +87,29 @@ update 함수는  **배열이 값이 변경**되거나 벼열의 값인 **Item�
 
 ### Attributes
 
+> Clock 관련 속성
 - [clockSize](https://github.com/heesung6701/TimePicker/wiki/clockSize)
 - [clockPadding](https://github.com/heesung6701/TimePicker/wiki/clockPadding)
+- [clockBorderColor](https://github.com/heesung6701/TimePicker/wiki/clockBorderColor)
+- [clockBorderWidth](https://github.com/heesung6701/TimePicker/wiki/clockBorderWidth)
+- [clockColor](https://github.com/heesung6701/TimePicker/wiki/clockColor)
+- [centerImage](https://github.com/heesung6701/TimePicker/wiki/centerImage)
+
+> Time 관련 속성
 - [timeTextColor](https://github.com/heesung6701/TimePicker/wiki/timeTextColor)
 - [timeSelectedTextColor](https://github.com/heesung6701/TimePicker/wiki/timeSelectedTextColor)
 - [timeBackgroundColor](https://github.com/heesung6701/TimePicker/wiki/timeBackgroundColor)
-- [clockBorderColor](https://github.com/heesung6701/TimePicker/wiki/clockBorderColor)
-- [clockColor](https://github.com/heesung6701/TimePicker/wiki/clockColor)
-- [centerImage](https://github.com/heesung6701/TimePicker/wiki/centerImage)
 
 ### Version Log
 
 - v0.0.1
 
-기초적인 기능 구현 후 라이브러리 화 시도
+> 기초적인 기능 구현 후 라이브러리 화 시도
 
 - v0.0.2
 
-clockBorderWidth 추가
+> clockBorderWidth 추가
+> 진행중
 
 ### Project Architecture
 
